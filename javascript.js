@@ -37,7 +37,7 @@ var text = document.getElementById("particles-js");
 		
 		function myTimer() {
 			var myVar = setInterval(myTimer, 1000);
-			if (Math.floor(getTranslateX()) == 0 && Math.floor(getTranslateY()) == 0) {
+			if (Math.floor(getTranslateX()) == 0 || Math.floor(getTranslateX()) == -1 && Math.floor(getTranslateY()) == 0 || Math.floor(getTranslateY()) == -1) {
 				clearInterval(myVar);
 				document.querySelector(".complete").style.display = "block";
 			}
