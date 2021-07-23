@@ -33,7 +33,7 @@ var text = document.getElementById("particles-js");
 			return matrix.m42;
 		}
 
-		var myVar = setInterval(myTimer, 3000);
+		var myVar = setInterval(myTimer, 5000);
 		
 		function myTimer() {
 			var myVar = setInterval(myTimer, 1000);
